@@ -166,7 +166,6 @@ local function acs1()
 			local plrCharacter = plr.Character
 			if plrCharacter and plrCharacter:FindFirstChild("Humanoid") then
 				game.ReplicatedStorage.GunSys.Eventos.Damage:FireServer(plrCharacter.Humanoid, 100, 0, 0)
-				game.ReplicatedStorage.ACS_Engine.Eventos.Damage:FireServer(plrCharacter.Humanoid, 100, 0, 0)
 			end
 		end
 		wait(3)
