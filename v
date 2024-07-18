@@ -165,6 +165,7 @@ local function acs1()
 		for _, plr in ipairs(game.Players:GetPlayers()) do
 			local plrCharacter = plr.Character
 			if plrCharacter and plrCharacter:FindFirstChild("Humanoid") then
+				game.ReplicatedStorage.GunSys.Eventos.Damage:FireServer(plrCharacter.Humanoid, 100, 0, 0)
 				game.ReplicatedStorage.ACS_Engine.Eventos.Damage:FireServer(plrCharacter.Humanoid, 100, 0, 0)
 			end
 		end
